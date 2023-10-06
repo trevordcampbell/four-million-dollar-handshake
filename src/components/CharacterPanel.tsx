@@ -33,12 +33,12 @@ const CharacterPanel: React.FC<CharacterPanelProps> = ({characters}) => {
 
           return(
             <div key={character.id} className="mx-auto max-w-4xl lg:max-w-6xl font-display overflow-hidden rounded-lg bg-white shadow-2xl">
-              <div className=" grid grid-cols-5 gap-4 bg-blue-100">
+              <div className=" grid grid-cols-5 gap-4">
                 {/* Left Image Section */}
-                <div className='relative col-span-5 sm:col-span-2'>
+                <div className='relative col-span-5 sm:col-span-2 bg-gradient-to-t from-blue-950 to-blue-600/30'>
                   {/* Character Image */}
                   <Image 
-                    className="w-full h-full min-h-[24rem] object-cover object-center bg-gradient-to-t from-slate-950 to white"
+                    className="w-full h-full min-h-[24rem] object-cover object-center"
                     src={character.image}
                     alt={character.name}
                     unoptimized
