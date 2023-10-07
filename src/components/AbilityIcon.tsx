@@ -8,8 +8,10 @@ export function AbilityIcon({ability, icon}:{ability: string, icon: StaticImageD
         <Image 
           className="w-12 h-12 object-cover object-center"
           src={icon}
-          alt="Test"
-          unoptimized
+          alt={ability}
+          priority
+          quality={100}
+          sizes="(min-width: 1280px) 10vw, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
         />
       </div>
       <div className='self-center'>

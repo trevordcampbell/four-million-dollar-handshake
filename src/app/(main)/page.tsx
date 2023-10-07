@@ -2,11 +2,11 @@ import CharacterPanel from '@/components/CharacterPanel'
 import { Character } from '../types/character'
 import { Hero } from '@/components/Hero'
 import { Newsletter } from '@/components/Newsletter'
-import { People } from '@/components/People'
 import Rules from '@/components/Rules'
 import imagePlayerPic from '@/images/player-pics/player-pic.png'
 
 //Character Icon Imports
+import iconBeard1 from '@/images/character-icons/beard-1.png'
 import iconBook1 from '@/images/character-icons/book-1.png'
 import iconBook2 from '@/images/character-icons/book-2.png'
 import iconChemistry1 from '@/images/character-icons/chemistry-1.png'
@@ -30,6 +30,8 @@ import iconImmigrant2 from '@/images/character-icons/immigrant-2.png'
 import iconLightbulb1 from '@/images/character-icons/lightbulb-1.png'
 import iconMoney1 from '@/images/character-icons/money-1.png'
 import iconMovie1 from '@/images/character-icons/movie-1.png'
+import iconPaint1 from '@/images/character-icons/paint-1.png'
+import iconRobot1 from '@/images/character-icons/robot-1.png'
 import iconScience1 from '@/images/character-icons/science-1.png'
 import iconScience2 from '@/images/character-icons/science-2.png'
 import iconScience3 from '@/images/character-icons/science-3.png'
@@ -38,10 +40,10 @@ import iconStorybook1 from '@/images/character-icons/storybook-1.png'
 import iconStoryland1 from '@/images/character-icons/storyland-1.png'
 import iconStoryteller1 from '@/images/character-icons/storyteller-1.png'
 import iconStoryteller2 from '@/images/character-icons/storyteller-2.png'
+import iconSuit1 from '@/images/character-icons/suit-1.png'
 import iconUtopia1 from '@/images/character-icons/utopia-1.png'
 import iconUtopia2 from '@/images/character-icons/utopia-2.png'
 import iconWorkshop1 from '@/images/character-icons/workshop-1.png'
-
 
 const characters: Character[] = [
   {
@@ -51,7 +53,7 @@ const characters: Character[] = [
     class: {title: "Ideas Guy", icon: iconLightbulb1},
     strengths: [
       {title: "Physical Sciences", icon: iconChemistry1},
-      {title: "Smooth Operator", icon: iconConstruction1},
+      {title: "Smooth Operator", icon: iconSuit1},
       {title: "Tinkerer", icon: iconWorkshop1},
       {title: "Optimist / Futurist", icon: iconUtopia1},
       {title: "Storyteller", icon: iconStorybook1},
@@ -76,15 +78,15 @@ const characters: Character[] = [
     image: imagePlayerPic,
     class: {title: "Code God", icon: iconComputerGod1},
     strengths: [
-      {title: "Deeply Technical", icon: iconComputerGod1},
+      {title: "Deeply Technical", icon: iconRobot1},
       {title: "Fast Builder", icon: iconConstruction1},
       {title: "Immigrant Bonus", icon: iconImmigrant2},
       {title: "Strong Network", icon: iconHandshake1},
-      {title: "Better Beard", icon: imagePlayerPic},
+      {title: "Better Beard", icon: iconBeard1},
     ],
     weaknesses: [
       {title: "Family Man", icon: iconFamily3},
-      {title: "Bad at Design", icon: imagePlayerPic},
+      {title: "Bad at Design", icon: iconPaint1},
       {title: "No Sales Experience", icon: iconMoney1},
 
     ],

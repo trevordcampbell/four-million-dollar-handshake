@@ -41,7 +41,8 @@ const CharacterPanel: React.FC<CharacterPanelProps> = ({characters}) => {
                     className="w-full h-full min-h-[24rem] object-cover object-center"
                     src={character.image}
                     alt={character.name}
-                    unoptimized
+                    priority
+                    sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                   />
                   {/* Character Name + Title Section */}
                   <div className='absolute bottom-0 left-0 pt-32 w-full bg-gradient-to-t from-slate-950 to-transparent'>
