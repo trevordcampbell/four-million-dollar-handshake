@@ -91,7 +91,7 @@ const CharacterPanel: React.FC<CharacterPanelProps> = ({characters}) => {
                   {/* Strengths Section*/}
                   <div className='mb-4 order-1'>
                     <Divider title="Strengths" />
-                    <div className='mt-4 grid grid-cols-3 gap-4'>
+                    <div className='mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4'>
                       {character.strengths.map(strength => (
                         <div key={strength.title}>
                           <AbilityIcon ability={strength.title} icon={strength.icon} />
@@ -103,7 +103,7 @@ const CharacterPanel: React.FC<CharacterPanelProps> = ({characters}) => {
                   {/* Weaknesses Section*/}
                   <div className='mb-4 order-2'>
                     <Divider title="Weaknesses" />
-                    <div className='mt-4 grid grid-cols-3 gap-4'>
+                    <div className='mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4'>
                       {character.weaknesses.map(weakness => (
                         <div key={weakness.title}>
                           <AbilityIcon ability={weakness.title} icon={weakness.icon} />

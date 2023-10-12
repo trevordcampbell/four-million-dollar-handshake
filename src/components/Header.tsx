@@ -1,14 +1,11 @@
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { ArrowIcon } from '@/components/ArrowIcon'
-import { Logo } from '@/components/Logo'
 import AnimatedCounterSmall from './AnimatedCounterSmall'
 import AnimatedCounter from './AnimatedCounter'
 
 export function Header() {
   return (
     // <header className="sticky top-0 z-50 flex-none lg:pt-11 lg:pb-6 bg-white/25 backdrop-blur-md">
-    <header className="sticky top-0 z-50 flex-none pb-2 lg:pt-6 lg:pb-4 bg-blue-700/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 flex-none pb-2 sm:pt-6 sm:pb-4 bg-blue-700/80 backdrop-blur-md">
 
       <Container className="flex items-center justify-center">
         {/* <div className="mt-10 lg:mt-0 lg:grow lg:basis-0">

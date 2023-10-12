@@ -17,13 +17,13 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ current }) => {
         {/* Current Revenue Label */}
         <div 
           style={{ left: `calc(${percentage}%)` }}
-          className="absolute bottom-full -mb-1 sm:mb-1 transform -translate-x-1/2"
+          className="absolute bottom-full transform -translate-x-1/2"
         >
             <div className="px-2 py-1 bg-gray-800 text-white text-xs sm:text-sm tracking-wide rounded">
               ${current.toLocaleString()}
             </div>
             <div 
-              className="mx-auto w-0 h-0 
+              className="-mt-0.5 mx-auto w-0 h-0 
                 border-l-[10px] border-l-transparent
                 border-t-[10px] border-t-gray-800
                 border-r-[10px] border-r-transparent"
